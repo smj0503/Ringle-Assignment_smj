@@ -1,0 +1,136 @@
+<center><h1 class="title">Ringle</h1>
+<hr>
+<br>
+<h3>Time table</h3>
+<br>
+
+<h4>SUN</h4>
+<% iter = 0%>
+<% @table.each do |apply_time| %>
+  <% if apply_time.SUN == "1" %>
+    <a href="/apply_tutor_SUN/<%=apply_time.id%>" class = "pos" style="text-decoration:none;">
+    <%= apply_time.time %></a>&emsp;
+  <% else %>
+    <p class = "neg" style="display:inline">
+    <%=apply_time.time%></p>&emsp;
+  <% end %>
+
+  <% iter = iter + 1 %>
+  <% if iter == 6%>
+    <% iter = 0%>
+    <br><br>
+  <% end %>
+<% end %>
+
+<h4>MON</h4>
+<% iter = 0%>
+<% @table.each do |apply_time| %>
+  <% if apply_time.MON != nil %>
+    <a href="/apply_tutor_MON/<%=apply_time.id%>" class = "pos" style="text-decoration:none;">
+    <%= apply_time.time %></a>&emsp;
+  <% else %>
+    <p class = "neg" style="display:inline">
+    <%=apply_time.time%></p>&emsp;
+  <% end %>
+
+  <% iter = iter + 1 %>
+  <% if iter == 6%>
+    <% iter = 0%>
+    <br><br>
+  <% end %>
+<% end %>
+
+<h4>TUE</h4>
+<% iter = 0%>
+<% @table.each do |apply_time| %>
+  <% if apply_time.TUE != nil %>
+    <a href="/apply_tutor_TUE/<%=apply_time.id%>" class = "pos" style="text-decoration:none;">
+    <%= apply_time.time %></a>&emsp;
+  <% else %>
+    <p class = "neg" style="display:inline">
+    <%=apply_time.time%></p>&emsp;
+  <% end %>
+
+  <% iter = iter + 1 %>
+  <% if iter == 6%>
+    <% iter = 0%>
+    <br><br>
+  <% end %>
+<% end %>
+
+<h4>WED</h4>
+<% iter = 0%>
+<% @table.each do |apply_time| %>
+  <% if apply_time.WED != nil %>
+    <a href="/apply_tutor_WED/<%=apply_time.id%>" class = "pos" style="text-decoration:none;">
+    <%= apply_time.time %></a>&emsp;
+  <% else %>
+    <p class = "neg" style="display:inline">
+    <%=apply_time.time%></p>&emsp;
+  <% end %>
+
+  <% iter = iter + 1 %>
+  <% if iter == 6%>
+    <% iter = 0%>
+    <br><br>
+  <% end %>
+<% end %>
+
+<h4>THU</h4>
+<% iter = 0%>
+<% @table.each do |apply_time| %>
+  <% if apply_time.THU != nil %>
+    <a href="/apply_tutor_THU/<%=apply_time.id%>" class = "pos" style="text-decoration:none;">
+    <%= apply_time.time %></a>&emsp;
+  <% else %>
+    <p class = "neg" style="display:inline">
+    <%=apply_time.time%></p>&emsp;
+  <% end %>
+
+  <% iter = iter + 1 %>
+  <% if iter == 6%>
+    <% iter = 0%>
+    <br><br>
+  <% end %>
+<% end %>
+
+<h4>FRI</h4>
+<% iter = 0%>
+<% @table.each do |apply_time| %>
+  <% if apply_time.FRI != nil %>
+    <a href="/apply_tutor_FRI/<%=apply_time.id%>" class = "pos" style="text-decoration:none;">
+    <%= apply_time.time %></a>&emsp;
+  <% else %>
+    <p class = "neg" style="display:inline">
+    <%=apply_time.time%></p>&emsp;
+  <% end %>
+
+  <% iter = iter + 1 %>
+  <% if iter == 6%>
+    <% iter = 0%>
+    <br><br>
+  <% end %>
+<% end %>
+
+<h4>SAT</h4>
+<% iter = 0%>
+<% @table.each do |apply_time| %>
+  <% if apply_time.SAT != nil %>
+    <a href="/apply_tutor_SAT/<%=apply_time.id%>" class = "pos" style="text-decoration:none;">
+    <%= apply_time.time %></a>&emsp;
+  <% else %>
+    <p class = "neg" style="display:inline">
+    <%=apply_time.time%></p>&emsp;
+  <% end %>
+
+  <% iter = iter + 1 %>
+  <% if iter == 6%>
+    <% iter = 0%>
+    <br><br>
+  <% end %>
+<% end %>
+
+<br>
+<a href="/" style="text-decoration:none;">
+Home</a>
+<br>

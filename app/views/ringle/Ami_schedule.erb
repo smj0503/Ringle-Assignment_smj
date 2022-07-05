@@ -1,0 +1,18 @@
+<%# Tutor Ami 시간 선택 %>
+<center><h1 class="title">Ringle</h1>
+<hr>
+<br>
+<h3>Ami's Schedule</h3>
+<p>수업 가능한 시간을 선택하세요</p>
+<br>
+
+<% iter = 0%>
+<% @table.each do |ami| %>
+  <a href="/ami_time/<%=ami.id%>" style="text-decoration:none;">
+  <%= ami.time %></a>&emsp;
+  <% iter = iter + 1 %>
+  <% if iter == 6%>
+    <% iter = 0%>
+    <br><br>
+  <% end %>
+<% end %>

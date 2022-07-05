@@ -1,0 +1,2 @@
+class Ellie < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class Charlie < ApplicationRecord
+end

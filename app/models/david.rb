@@ -1,0 +1,2 @@
+class David < ApplicationRecord
+end

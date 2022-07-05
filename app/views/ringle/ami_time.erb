@@ -1,0 +1,36 @@
+<%# Tutor Ami 요일 선택 %>
+<center><h1 class="title">Ringle</h1>
+<hr><br>
+
+<h3>Ami's Schedule</h3>
+<h4><%=@ami.time%><br></h4>
+<p>수업 가능한 요일을 선택하세요</p><br>
+
+<form action="/ami_day" method="post">
+  <input name="SUN" type="checkbox" value="1" />
+  <label for="SUN">SUN</label>&emsp;
+
+  <input name="MON" type="checkbox" value="1" />
+  <label for="MON">MON</label>&emsp;
+
+  <input name="TUE" type="checkbox" value="1" />
+  <label for="TUE">TUE</label>&emsp;
+
+  <input name="WED" type="checkbox" value="1" />
+  <label for="WED">WED</label>&emsp;
+
+  <input name="THU" type="checkbox" value="1" />
+  <label for="THU">THU</label>&emsp;
+
+  <input name="FRI" type="checkbox" value="1" />
+  <label for="FRI">FRI</label>&emsp;
+
+  <input name="SAT" type="checkbox" value="1" />
+  <label for="SAT">SAT</label>&emsp;
+
+  <input type="hidden" name="id" value="<%=@ami.id%>">
+  <br><br>
+  <button type="submit">등록하기</button>
+  <br><br><br>
+  <a href="/" style="text-decoration:none;">Home</a>
+</form>
