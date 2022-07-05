@@ -236,13 +236,14 @@ class RingleController < ApplicationController
 
   def search
   end
+
   def name_lecture
     name_lecture = Resevation.new
 		name_lecture.title = params[:user]
 		name_lecture.description = params[:lecture]
 		name_lecture.save
 		
-		redirect_to '/main' 	# 데이터를 저장하고나면 메인페이지로 바로 넘겨줌
+		redirect_to '/main' 
   end
 
   def apply_time

@@ -5,27 +5,29 @@
 <h4>Tutor list</h4>
 <br>
 
-<% if @ami.TUE == "1"%>
-<input name="" type="checkbox" value="1" />
-Ami
-<% end %>
+<form action="/" method="post">
+  <% if @ami.TUE == "1"%>
+    <input name="" type="checkbox" value="1" />
+    Ami
+  <% end %>
 
-<% if @bob.TUE == "1"%>
-<input name="" type="checkbox" value="1" />
-Bob
-<% end %>
+  <% if @bob.TUE == "1"%>
+    <input name="" type="checkbox" value="1" />
+    Bob
+  <% end %>
 
-<% if @charlie.TUE == "1"%>
-<input name="" type="checkbox" value="1" />
-Charlie
-<% end %>
+  <% if @charlie.TUE == "1"%>
+    <input name="" type="checkbox" value="1" />
+    Charlie
+  <% end %>
 
-<% if @david.TUE == "1"%>
-<input name="" type="checkbox" value="1" />
-David
-<% end %>
+  <% if @david.TUE == "1"%>
+    <input name="" type="checkbox" value="1" />
+    David
+  <% end %>
 
-<% if @ellie.TUE == "1"%>
-<input name="" type="checkbox" value="1" />
-Ellie
-<% end %>
+  <% if @ellie.TUE == "1"%>
+    <input name="" type="checkbox" value="1" />
+    Ellie
+  <% end %>
+</form>
