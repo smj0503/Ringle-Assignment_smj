@@ -1,0 +1,19 @@
+<center><h1 class="title">Ringle</h1>
+<hr>
+<br>
+<h3>Ami 예약 현황</h3>
+<br>
+
+<% @reservations.each do |ami| %>
+  <% if ami.tutor == "Ami"%>
+    <%= ami.name%>&emsp;
+    <%= ami.lecture%>&emsp;
+    <%= ami.day%>&emsp;
+    <%= ami.time%>&emsp;
+  <%end%>
+  <br>
+<% end %>
+
+<br><br>
+<a href="/show" style="text-decoration:none;">Back</a>&emsp;
+<a href="/" style="text-decoration:none;">Home</a>

@@ -44,4 +44,9 @@ Rails.application.routes.draw do
   get "/apply_tutor_SAT/:satId" => "ringle#apply_tutor_SAT"
 
   get "/show" => "ringle#show"
+  get "/ami_reservation" => "ringle#ami_reservation"
+  get "/bob_reservation" => "ringle#bob_reservation"
+  get "/charlie_reservation" => "ringle#charlie_reservation"
+  get "/david_reservation" => "ringle#david_reservation"
+  get "/ellie_reservation" => "ringle#ellie_reservation"
 end

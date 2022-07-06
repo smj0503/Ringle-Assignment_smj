@@ -321,7 +321,20 @@ class RingleController < ApplicationController
 	end
 
   def show
-    @lists = Reservation.all
   end
-
+  def ami_reservation
+    @reservations = Reservation.all
+  end
+  def bob_reservation
+    @reservations = Reservation.all
+  end
+  def charlie_reservation
+    @reservations = Reservation.all
+  end
+  def david_reservation
+    @reservations = Reservation.all
+  end
+  def ellie_reservation
+    @reservations = Reservation.all
+  end
 end
